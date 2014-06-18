@@ -740,6 +740,13 @@ h1.entry-title {
 .wagw_col_right{
   float:right;
 }
+@media all and (max-width:500px) {
+  .wagw_col, wawg_col_left,wawg_col_center,wawg_col_right {
+    width: 100%;
+    float:none;
+    padding:0;
+  }
+}   
 .site-title {
   display:none;
 }
