@@ -12,9 +12,7 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'wagw' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'wagw' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'wagw' ), 'What A Great Website', '<a href="http://www.sterndata.com" rel="designer">Stern Data Solutions</a>' ); ?>
+Copyright &copy; <?php echo date('Y');?> What A Great Website
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
