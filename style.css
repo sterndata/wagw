@@ -29,7 +29,7 @@ and Blueprint http://www.blueprintcss.org/
   The colors are:
      orange #F37321
      purple  #75439A
-     green  #F37321
+     green #98CA49 
  */
 
 /*--------------------------------------------------------------
@@ -416,7 +416,7 @@ a:active {
 .main-navigation ul ul li {
 }
 .main-navigation li:hover > a {
-   background-color:green;
+   background-color:#98CA49;
 }
 .main-navigation ul ul :hover > a {
 }
@@ -430,7 +430,7 @@ a:active {
 }
 .main-navigation .current_page_item a,
 .main-navigation .current-menu-item a {
-   background-color:green;
+   background-color:#98CA49;
 }
 /* Small menu */
 .menu-toggle {
@@ -709,7 +709,7 @@ object {
  background-color: #F37321;
 }
 #colophon-container {
-  background-color: green;
+  background-color: #98CA49;
   color: #fff;
 }
 h1.entry-title {
@@ -721,7 +721,7 @@ h1.entry-title {
 .entry-content h2 {
   font-size: 120%;
   margin-bottom:.75em;
-  color: green;
+  color: #98CA49;
 }
 .wagw_col{
   width:33%;
