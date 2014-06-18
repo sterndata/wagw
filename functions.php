@@ -62,10 +62,12 @@ function wagw_setup() {
 	) );
 
 	// Setup the WordPress core custom background feature.
-	// add_theme_support( 'custom-background', apply_filters( 'wagw_custom_background_args', array(
+/*--------------------------
+	 add_theme_support( 'custom-background', apply_filters( 'wagw_custom_background_args', array(
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+-----------------------------*/
 }
 endif; // wagw_setup
 add_action( 'after_setup_theme', 'wagw_setup' );
