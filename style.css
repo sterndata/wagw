@@ -734,6 +734,12 @@ object {
 #colophon-container {
   background-color: #98CA49;
   color: #fff;
+  text-align:center;
+  font-size:90%;
+}
+#colophon a, #colophon a:visited {
+  color:#fff;
+  text-decoration:none;
 }
 h1.entry-title {
   font-weight:bold;
