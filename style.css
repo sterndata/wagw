@@ -793,4 +793,9 @@ h1.entry-title {
   font-size:200%;
   margin-top:1em;
 }
+/* color the jetpack social share buttons */
+
+.sd-social-icon .sd-content ul li a.sd-button, .sd-social-text .sd-content ul li a.sd-button, .sd-content ul li a.sd-button, .sd-content ul li .option a.share-ustom, .sd-content ul li.preview-item div.option.option-smart-off a, .sd-content ul li.advanced a.share-more, .sd-social-icon-text .sd-content ul li a.sd-button, .sd-social-official .sd-content>ul>li>a.sd-button, #sharing_email .sharing_send, .sd-social-official .sd-content>ul>li .digg_button >a {
+  background: rgba(243,115,33,.1) !important;
+}
 
