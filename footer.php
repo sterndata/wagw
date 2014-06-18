@@ -9,7 +9,7 @@
 ?>
 
 	</div><!-- #content -->
-
+<div id="colophon-container">
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 Copyright &copy; <?php echo date('Y');?> What A Great Website
@@ -18,6 +18,6 @@ Copyright &copy; <?php echo date('Y');?> What A Great Website
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
+</div><!-- colophon-container -->
 </body>
 </html>

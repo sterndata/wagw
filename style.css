@@ -570,8 +570,6 @@ a:active {
 10.1 Posts and pages
 --------------------------------------------------------------*/
 #page {
-  max-width: 960px;
-  margin:0 auto;
 }
 
 .sticky {
@@ -704,11 +702,13 @@ object {
 #masthead,#content,#colophon {
   padding-left: 2em;
   padding-right:2em;
+  max-width:960px;
+  margin:0 auto;
 }
-#masthead {
+#masthead-container {
  background-color: #F37321;
 }
-#colophon {
+#colophon-container {
   background-color: green;
   color: #fff;
 }
