@@ -143,7 +143,7 @@ input,
 select,
 textarea {
 	color: #404040;
-	font-family: sans-serif;
+	font-family:Raleway,sans-serif; 
 	font-size: 16px;
 	font-size: 1.6rem;
 	line-height: 1.5;
@@ -371,6 +371,10 @@ a:active {
 /*--------------------------------------------------------------
 5.2 Menus
 --------------------------------------------------------------*/
+#menu-primarynav {
+  float:right;
+}
+
 .main-navigation {
 	clear: both;
 	display: block;
@@ -389,6 +393,9 @@ a:active {
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+        padding-left:.75em;
+        padding-right:.75em;
+        color:#fff;
 }
 .main-navigation ul ul {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -404,10 +411,12 @@ a:active {
 }
 .main-navigation ul ul a {
 	width: 200px;
+        background-color:#F37321;
 }
 .main-navigation ul ul li {
 }
 .main-navigation li:hover > a {
+   background-color:green;
 }
 .main-navigation ul ul :hover > a {
 }
@@ -421,6 +430,7 @@ a:active {
 }
 .main-navigation .current_page_item a,
 .main-navigation .current-menu-item a {
+   background-color:green;
 }
 /* Small menu */
 .menu-toggle {
@@ -559,6 +569,11 @@ a:active {
 /*--------------------------------------------------------------
 10.1 Posts and pages
 --------------------------------------------------------------*/
+#page {
+  max-width: 960px;
+  margin:0 auto;
+}
+
 .sticky {
 }
 .hentry {
@@ -685,3 +700,12 @@ object {
 	max-width: 11.11%;
 }
 .gallery-caption {}
+
+#masthead,#content,colophon {
+  padding-left: 2em;
+  padding-right:2em;
+}
+#masthead {
+ background-color: #F37321;
+}
+
