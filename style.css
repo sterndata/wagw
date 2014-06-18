@@ -356,11 +356,9 @@ textarea {
 /*--------------------------------------------------------------
 5.1 Links
 --------------------------------------------------------------*/
-a {
-	color: royalblue;
-}
-a:visited {
-	color: purple;
+a, a:visited {
+	color: #75439A;
+         text-decoration: none;
 }
 a:hover,
 a:focus,
@@ -799,3 +797,10 @@ h1.entry-title {
   background: rgba(152, 202, 73,.1) !important;
 }
 
+/* color the CF7 inputs */
+
+.wpcf7 input,
+.wpcf7 textarea {
+   background: rgba(152, 202, 73,.1);
+   font-family:Courier,mono;
+}
