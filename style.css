@@ -738,3 +738,18 @@ h1.entry-title {
 .wagw_col_right{
   float:right;
 }
+.site-title {
+  display:none;
+}
+#hdr-logo {
+  float:left;
+}
+
+.site-branding {
+  float:right;
+}
+.site-description {
+  color: #fff;
+  font-size:200%;
+}
+
