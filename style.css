@@ -444,6 +444,9 @@ a:active {
 	.main-navigation ul {
 		display: none;
 	}
+       .main-navigation .current_page_item ul  a {
+          background-color:inherit;
+         }
        .main-navigation li:hover > a {
           background-color:inherit;
          }
