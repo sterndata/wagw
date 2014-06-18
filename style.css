@@ -716,6 +716,7 @@ h1.entry-title {
   font-weight:bold;
   font-size:150%;
   margin-left:20%;
+  margin-top:.5em;
   color: #75439A;
 }
 .entry-content h2 {
@@ -743,6 +744,7 @@ h1.entry-title {
 }
 #hdr-logo {
   float:left;
+  margin-bottom:-3em;
 }
 
 .site-branding {
@@ -751,5 +753,6 @@ h1.entry-title {
 .site-description {
   color: #fff;
   font-size:200%;
+  margin-top:1em;
 }
 
