@@ -701,11 +701,24 @@ object {
 }
 .gallery-caption {}
 
-#masthead,#content,colophon {
+#masthead,#content,#colophon {
   padding-left: 2em;
   padding-right:2em;
 }
 #masthead {
  background-color: #F37321;
 }
-
+#colophon {
+  background-color: green;
+  color: #fff;
+}
+h1.entry-title {
+  font-weight:bold;
+  font-size:150%;
+  margin-left:20%;
+  color: #75439A;
+}
+.entry-content h2 {
+  font-size: 120%;
+  color: green;
+}
