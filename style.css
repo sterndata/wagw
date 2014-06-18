@@ -720,5 +720,21 @@ h1.entry-title {
 }
 .entry-content h2 {
   font-size: 120%;
+  margin-bottom:.75em;
   color: green;
+}
+.wagw_col{
+  width:33%;
+}
+.wagw_col_left{
+  float:left;
+  padding-right:.5em;
+}
+.wagw_col_center{
+  float:left;
+  padding-left:.5em;
+  padding-right:.5em;
+}
+.wagw_col_right{
+  float:right;
 }
