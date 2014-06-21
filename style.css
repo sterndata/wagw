@@ -807,3 +807,17 @@ h1.entry-title {
    background: rgba(152, 202, 73,.1);
    font-family:Courier,mono;
 }
+
+@media only screen and (min-width: 768px) {
+  body .wooslider .overlay-full.layout-text-left .slide-excerpt {
+    background: #444;
+    opacity .6;
+  }
+  h2.slide-title a,
+  h2.slide-title a:visited {
+    color:#fff;
+  }
+  .wooslider-control-thumbs li {
+    width: 15%;
+  }
+}
