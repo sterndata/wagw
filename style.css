@@ -824,8 +824,8 @@ h1.entry-title {
 }
 
   /* home page slider  has no border or shadow at all screen sizes */
-
-  .home .wooslider {
+.home .wooslider {
     box-shadow:none;
     margin-bottom:0 !important;
-  }
+}
+
