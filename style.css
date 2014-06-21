@@ -819,6 +819,13 @@ h1.entry-title {
     color:#fff;
   }
   .wooslider-control-thumbs li {
-    width: 15%;
+    width: 10%;
   }
 }
+
+  /* home page slider  has no border or shadow at all screen sizes */
+
+  .home .wooslider {
+    box-shadow:none;
+    margin-bottom:0 !important;
+  }
