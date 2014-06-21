@@ -811,7 +811,8 @@ h1.entry-title {
 @media only screen and (min-width: 768px) {
   body .wooslider .overlay-full.layout-text-left .slide-excerpt {
     background: #444;
-    opacity .6;
+    opacity .8;
+    color:#fff
   }
   h2.slide-title a,
   h2.slide-title a:visited {
