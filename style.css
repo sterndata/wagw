@@ -388,6 +388,7 @@ a:active {
 	float: left;
 	position: relative;
         margin-left:1px;
+        text-transform: lowercase;
 }
 .main-navigation a {
 	display: block;
@@ -748,6 +749,7 @@ h1.entry-title {
   margin-left:20%;
   margin-top:.5em;
   color: #75439A;
+  text-transform: lowercase;
 }
 .entry-content h2 {
   font-size: 120%;
