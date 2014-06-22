@@ -756,6 +756,9 @@ h1.entry-title {
   font-weight:bold;
   line-height:1.25em;
 }
+.entry-content a {
+  font-weight: bold;
+}
 .wagw_col{
   width:33%;
 }
@@ -828,4 +831,9 @@ h1.entry-title {
     box-shadow:none;
     margin-bottom:0 !important;
 }
+/* cut the width of the print slider and center */
 
+#woo-print {
+   max-width: 720px;
+   margin: 0 auto;
+}
