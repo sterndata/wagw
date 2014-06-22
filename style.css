@@ -837,3 +837,7 @@ h1.entry-title {
    max-width: 720px;
    margin: 0 auto;
 }
+.hdr-social-icons {
+  float:right;
+  margin-top: -1em;
+}
