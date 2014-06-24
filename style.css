@@ -416,8 +416,8 @@ a:active {
 .main-navigation ul ul li {
 }
 .main-navigation li:hover > a {
-   background-color:#98CA49;
-   color:#75439A;
+ /*   background-color:#98CA49; */
+ background-color:  #75439A;
 
 }
 .main-navigation ul ul :hover > a {
