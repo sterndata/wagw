@@ -760,6 +760,7 @@ h1.entry-title {
   color: #98CA49;
   font-weight:bold;
   line-height:1.25em;
+  clear:none;
 }
 .entry-content a {
   font-weight: bold;
