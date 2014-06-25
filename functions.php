@@ -11,6 +11,8 @@
 if ( ! isset( $content_width ) ) {
 	$content_width = 640; /* pixels */
 }
+add_action( 'after_setup_theme', 'my_remove_feeds' );
+
 
 if ( ! function_exists( 'wagw_setup' ) ) :
 /**
@@ -31,7 +33,8 @@ function wagw_setup() {
 	load_theme_textdomain( 'wagw', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
-	add_theme_support( 'automatic-feed-links' );
+/* disable automatic feeds */
+	// add_theme_support( 'automatic-feed-links' );
 
 	/*
 	 * Enable support for Post Thumbnails on posts and pages.
