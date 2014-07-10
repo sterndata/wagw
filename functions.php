@@ -11,8 +11,6 @@
 if ( ! isset( $content_width ) ) {
 	$content_width = 640; /* pixels */
 }
-add_action( 'after_setup_theme', 'my_remove_feeds' );
-
 
 if ( ! function_exists( 'wagw_setup' ) ) :
 /**
