@@ -439,6 +439,22 @@ a:active {
 .menu-toggle {
 	display: none;
 }
+@media screen and (max-width: 650px) {
+
+ h2.site-description {
+    font-size: 125%;
+    width: 100%;
+    text-align:right;
+    float:right;
+ }
+ #hdr-logo a img {
+    width: 50%;
+ }
+ .site-branding {
+    margin-top: -2em;
+ }
+} /* 650px */
+
 @media screen and (max-width: 600px) {
 	.menu-toggle,
 	.main-navigation.toggled .nav-menu {
@@ -472,8 +488,8 @@ a:active {
        .main-navigation li {
          float:none;
          }
+}  /* 600px */
 
-}
 .site-main .comment-navigation,
 .site-main .paging-navigation,
 .site-main .post-navigation {
