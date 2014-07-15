@@ -447,11 +447,11 @@ a:active {
     text-align:right;
     float:right;
  }
- #hdr-logo a img {
+ #hdr-logo {
     width: 50%;
  }
  .site-branding {
-    margin-top: -2em;
+    margin-top: -1.75em;
  }
 } /* 650px */
 
@@ -812,6 +812,8 @@ h1.entry-title {
 #hdr-logo {
   float:left;
   margin-bottom:-3em;
+  position:relative;
+  z-index:5;
 }
 
 .site-branding {
