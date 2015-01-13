@@ -770,6 +770,10 @@ h1.entry-title {
   color: #75439A;
   text-transform: lowercase;
 }
+h1.widget-title {
+  font-weight: bold;
+  color: #75439A;
+}
 .entry-content h2 {
   font-size: 120%;
   margin-bottom:.75em;
@@ -886,11 +890,12 @@ h1.entry-title {
 }
 .single .site-content .widget-area,
 .blog .site-content .widget-area {
-        padding-top: 2em;
+        padding-top: 3em;
         padding-left: 1em;
         float: right;
         overflow: hidden;
         width: 25%;
+        font-size: 90%;
 }
 
 
