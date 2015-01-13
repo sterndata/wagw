@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Page w/Sidebar
+ * Template Name: Page-Sidebar
  *
  * @package What A Great Website
  */
