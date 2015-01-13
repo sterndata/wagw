@@ -885,6 +885,7 @@ h1.page-title {
 
 /* pages with sidebars */
 
+.page-template-page-sidebar .content-area,
 .archive .content-area,
 .single .content-area,
 .blog .content-area {
@@ -893,11 +894,13 @@ h1.page-title {
         width: 100%;
         padding-right: 1em;
 }
+.page-template-page-sidebar .site-main,
 .archive .site-main,
 .single .site-main,
 .blog .site-main {
        margin: 0 25% 0 0;
 }
+.page-template-page-sidebar .site-content .widget-area,
 .archive .site-content .widget-area,
 .single .site-content .widget-area,
 .blog .site-content .widget-area {
@@ -914,6 +917,7 @@ h1.page-title {
 @media all and (max-width: 650px) {
 
 
+   .page-template-page-sidebar .content-area,
    .archive .content-area,
    .single .content-area,
    .blog .content-area {
@@ -921,12 +925,14 @@ h1.page-title {
         margin: 0;
         width: 100%;
    }
+   .page-template-page-sidebar .site-main,
    .archive .site-main,
    .single .site-main,
    .blog .site-main {
        margin: 0;
    }
-   .archive .site-content,
+   .page-template-page-sidebar .site-content .widget-area,
+   .archive .site-content .widget-area,
    .single .site-content .widget-area,
    .blog .site-content .widget-area {
         padding-top: 2em;
