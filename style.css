@@ -774,6 +774,14 @@ h1.widget-title {
   font-weight: bold;
   color: #75439A;
 }
+h1.page-title {
+  font-weight:bold;
+  font-size:165%;
+  margin-top:.5em;
+  color: #75439A;
+  text-transform: lowercase;
+}
+
 .entry-content h2 {
   font-size: 120%;
   margin-bottom:.75em;
@@ -877,6 +885,7 @@ h1.widget-title {
 
 /* pages with sidebars */
 
+.archive .content-area,
 .single .content-area,
 .blog .content-area {
         float: left;
@@ -884,10 +893,12 @@ h1.widget-title {
         width: 100%;
         padding-right: 1em;
 }
+.archive .site-main,
 .single .site-main,
 .blog .site-main {
        margin: 0 25% 0 0;
 }
+.archive .site-content .widget-area,
 .single .site-content .widget-area,
 .blog .site-content .widget-area {
         padding-top: 3em;
@@ -903,16 +914,19 @@ h1.widget-title {
 @media all and (max-width: 650px) {
 
 
+   .archive .content-area,
    .single .content-area,
    .blog .content-area {
         float: none;
         margin: 0;
         width: 100%;
    }
+   .archive .site-main,
    .single .site-main,
    .blog .site-main {
        margin: 0;
    }
+   .archive .site-content,
    .single .site-content .widget-area,
    .blog .site-content .widget-area {
         padding-top: 2em;

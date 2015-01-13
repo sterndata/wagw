@@ -12,8 +12,12 @@
  */
 
 get_header(); ?>
-
 	<div id="primary" class="content-area">
+        <?php if (is_home()) {
+              echo '<h1 class="page-title">Blog<h1>';
+              }
+        ?>
+
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
