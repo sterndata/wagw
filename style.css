@@ -693,6 +693,7 @@ object {
 .wp-caption {
 	margin-bottom: 1.5em;
 	max-width: 100%;
+        box-shadow: 0 1px 4px #ccc;
 }
 .wp-caption img[class*="wp-image-"] {
 	display: block;
@@ -702,7 +703,9 @@ object {
 	text-align: center;
 }
 .wp-caption .wp-caption-text {
-	margin: 0.8075em 0;
+	margin: 0.5em 0;
+        font-size: 80%;
+        font-style:italic;
 }
 
 /*--------------------------------------------------------------
