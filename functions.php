@@ -106,7 +106,9 @@ add_action( 'widgets_init', 'wagw_widgets_init' );
  * Enqueue scripts and styles.
  */
 function wagw_scripts() {
-	wp_enqueue_style( 'wagw-style', get_stylesheet_uri() );
+        $theme = wp_get_theme();
+        $ver = $theme->get( 'Version' );
+	wp_enqueue_style( 'wagw-style', get_stylesheet_uri(),array(),$ver );
 
 	wp_enqueue_script( 'wagw-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
