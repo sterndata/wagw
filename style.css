@@ -814,6 +814,9 @@ h1.page-title {
 .wagw_col_right{
   float:right;
 }
+.entry-meta {
+   margin-left: 20%;
+}
 @media all and (max-width:600px) {
   .wagw_col, wawg_col_left,wawg_col_center,wawg_col_right {
     width: 100%;
