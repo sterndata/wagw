@@ -156,3 +156,6 @@ function wagw_load_fonts() {
 add_action('wp_print_styles', 'wagw_load_fonts');
 
 include_once ('shortcodes.php');
+
+wp_enqueue_script('thickbox', true);
+wp_enqueue_style('thickbox');
