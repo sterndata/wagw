@@ -161,3 +161,5 @@ add_action('wp_print_styles', 'wagw_load_fonts');
 
 include_once ('shortcodes.php');
 
+// Allow photon on secure url.
+add_filter( 'jetpack_photon_reject_https', '__return_false' );
