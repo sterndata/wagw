@@ -27,9 +27,9 @@ var e = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,he
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'wagw' ); ?></a>
 	<header id="masthead" class="site-header" role="banner">
 
-        <div id="hdr-logo"><a href="/"><img src="/wp-content/uploads/WAWG-Logo.png" alt="Wow! What A great Website!" title="Wow! What A Great Website!"></a></div>
+		<div id="hdr-logo"><a href="/"><img src="/wp-content/uploads/WAWG-Logo.png" alt="Wow! What A great Website!" title="Wow! What A Great Website!"></a></div>
 		<div class="site-branding">  
-<?php get_sidebar('header'); ?>
+<?php get_sidebar( 'header' ); ?>
 
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
