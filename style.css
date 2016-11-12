@@ -936,10 +936,14 @@ h1.page-title {
   height: 100%;
 }
 
-
 @media all and (max-width: 650px) {
-
-
+   #secondary {
+      position: inherit;
+      top: auto;
+      bottom: auto;
+      right: auto;
+      height: auto;
+    }
    .page-template-page-sidebar .content-area,
    .archive .content-area,
    .single .content-area,
