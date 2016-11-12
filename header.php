@@ -20,7 +20,7 @@ var e = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,he
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?> onload="javascript:wagw_adjust_sidebar()">
+<body <?php body_class(); ?> >
 
 <div id="page" class="hfeed site">
 <div id="masthead-container">
