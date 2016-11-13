@@ -12,13 +12,14 @@
 
 get_header(); ?>
 
-	<div id="featured-image">
 		<?php
-		if ( has_post_thumbnail() ) {
-			the_post_thumbnail('full');
-			}
-		?>
-	<div id="primary" class="content-area">
+		if ( has_post_thumbnail() ) { ?>
+			 <div id="featured-image">
+			<?php the_post_thumbnail('full'); ?>
+			</div>
+		<?php	} ?>
+	
+<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
