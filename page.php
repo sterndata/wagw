@@ -12,13 +12,6 @@
 
 get_header(); ?>
 
-		<?php
-		if ( has_post_thumbnail() ) { ?>
-			 <div id="featured-image">
-			<?php the_post_thumbnail('full'); ?>
-			</div>
-		<?php	} ?>
-	
 <div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 

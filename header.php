@@ -41,4 +41,13 @@ var e = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,he
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 </div><!-- masthead container -->
+
+
+        <?php
+        if ( has_post_thumbnail() ) { ?>
+             <div id="featured-image">
+            <?php the_post_thumbnail('full'); ?>
+            </div>
+        <?php   } ?>
+
 	<div id="content" class="site-content">
