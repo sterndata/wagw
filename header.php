@@ -43,7 +43,7 @@ var e = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,he
 
 
         <?php
-        if ( has_post_thumbnail() ) { ?>
+        if ( ! is_home() && ! is_single() &&  has_post_thumbnail() ) { ?>
              <div id="featured-image">
             <?php the_post_thumbnail('full'); ?>
             </div>
