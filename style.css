@@ -401,7 +401,7 @@ a:active {
         color:#fff;
 }
 .main-navigation ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.35);
 	float: left;
 	position: absolute;
 	top: 1.5em;
@@ -442,6 +442,14 @@ a:active {
 .menu-toggle {
 	display: none;
 }
+#hdr-logo {
+  float:left;
+  margin-bottom:-23px;
+  margin-top: -23px;
+  position:relative;
+  z-index:5;
+}
+
 @media screen and (max-width: 650px) {
 
  h2.site-description {
@@ -449,9 +457,6 @@ a:active {
     width: 100%;
     text-align:right;
     float:right;
- }
- #hdr-logo {
-    width: 50%;
  }
  .site-branding {
     margin-top: -1.75em;
@@ -464,6 +469,10 @@ a:active {
 		display: block;
                 width:100%;
 	}
+    .menu-toggle {
+        font-weight:bold;
+        font-size: 125%;
+    }
 	.main-navigation ul {
 		display: none;
 	}
@@ -477,7 +486,7 @@ a:active {
          display:block;
          float:none;
          top:0;
-         left:0;
+         left:1em;
          position:relative;
          box-shadow:none;
          }
@@ -485,14 +494,26 @@ a:active {
          width: 100%;
          }
        #menu-primarynav {
-         text-align:center;
+         text-align: left:
          width: 100%;
          }
        .main-navigation li {
          float:none;
          }
+       #hdr-logo {
+         float:none;
+         margin:0;
+         position:initial;
+       }
+
 }  /* 600px */
 
+@media screen and (max-width: 850px) {
+   #hdr-logo {
+     width: 50%;
+     float:none;
+   }
+}
 .site-main .comment-navigation,
 .site-main .paging-navigation,
 .site-main .post-navigation {
@@ -837,13 +858,6 @@ h1.page-title {
 }   
 .site-title {
   display:none;
-}
-#hdr-logo {
-  float:left;
-  margin-bottom:-23px;
-  margin-top: -23px;
-  position:relative;
-  z-index:5;
 }
 
 .site-branding {
