@@ -770,7 +770,6 @@ object {
 #colophon-container {
   background-color: #98CA49;
   color: #fff;
-  text-align:center;
   font-size:90%;
 }
 #colophon a, #colophon a:visited {
@@ -874,10 +873,6 @@ h1.page-title {
    max-width: 75% !important;
 }
 
-.hdr-social-icons {
-  float:right;
-  margin-top: -1em;
-}
 .bubble {
 }
 
@@ -960,4 +955,20 @@ h1.page-title {
 
 
 }
+
+/* footer stuff */
+.site-info {
+  float:left;
+}
+.hdr-social-icons {
+  float:right;
+  margin-top: -1em;
+}
+
+@media screen and (max-width:500px) {
+  .hdr-social-icons {
+    float:none;
+  }
+}
+
 

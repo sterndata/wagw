@@ -11,10 +11,9 @@
 	</div><!-- #content -->
 <div id="colophon-container">
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-<a href="mailto:info@whatagreatwebsite.net">info@whatagreatwebsite.net</a> | <a href="tel:8474414230">847.441.4230</a>
-<br />Copyright &copy; <?php echo date( 'Y' );?> What A Great Website!, LLC
+		<div class="site-info"><a href="mailto:info@whatagreatwebsite.net">info@whatagreatwebsite.net</a> | <a href="tel:8474414230">847.441.4230</a><br />&copy; <?php echo date( 'Y' );?> What A Great Website!, LLC
 		</div><!-- .site-info -->
+<?php get_sidebar( 'footer' ); ?>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
