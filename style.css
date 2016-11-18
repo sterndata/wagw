@@ -915,10 +915,6 @@ h1.page-title {
   right: 0;
   height: 100%;
 }
-.home .entry-content {
-    width: 60%;
-    margin: 0 auto;
-}
 
 @media all and (max-width: 900px) {
 	.home .entry-content {
