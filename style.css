@@ -958,17 +958,20 @@ h1.page-title {
 }
 
 /* footer stuff */
-.site-info {
-  float:left;
-}
 .hdr-social-icons {
-  float:right;
-  margin-top: -1em;
+    float:none;
+    display: inline-block;
+    margin-top: 1em;
 }
 
-@media screen and (max-width:500px) {
+@media screen and (min-width:500px) {
   .hdr-social-icons {
-    float:none;
+    float:right;
+    margin-top: -1em;
+
+  }
+  .site-info {
+    float:left;
   }
 }
 
