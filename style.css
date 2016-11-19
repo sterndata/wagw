@@ -29,7 +29,7 @@ and Blueprint http://www.blueprintcss.org/
   The colors are:
      orange #F37321
      purple  #75439A
-     green #98CA49 
+     green #98CA49
  */
 
 /*--------------------------------------------------------------
@@ -143,7 +143,7 @@ input,
 select,
 textarea {
 	color: #404040;
-	font-family:Raleway,sans-serif; 
+	font-family:Raleway,sans-serif;
 	font-size: 16px;
 	font-size: 1.6rem;
 	line-height: 1.5;
@@ -272,7 +272,7 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
 	border: 1px solid;
-	border-color: #ccc #ccc #bbb; 
+	border-color: #ccc #ccc #bbb;
 	border-radius: 3px;
 	background: #e6e6e6;
 	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
@@ -449,7 +449,7 @@ a:active {
   margin-bottom:-23px;
   margin-top: -23px;
   position:relative;
-  z-index:0;
+  z-index:5;
 }
 
 @media screen and (max-width: 650px) {
@@ -860,7 +860,7 @@ h1.page-title {
     float:none;
     padding:0;
   }
-}   
+}
 .site-title {
   display:none;
 }
@@ -995,3 +995,73 @@ h1.page-title {
 }
 
 
+/***************************
+* Flexslider
+****************************/
+
+ul.slides {
+  margin: 0;
+}
+.flex-control-nav.flex-control-paging {
+  bottom: -40px;
+}
+.flexslider {
+  border: none !important;
+  margin: 0 auto !important;
+	max-width: 1100px;
+}
+.flex-caption {
+  font-size: 18px;
+  font-style: italic;
+  color: #fff;
+  display: block;
+  background: rgba(243,115,33, 1);
+  width: 100%;
+  margin: 0 auto;
+  padding: 1%;
+  text-align: center;
+}
+.caption_title {
+  font-weight: bold;
+  font-size: 24px;
+  font-style: italic;
+  color: #fff;
+  display: block;
+  text-align: center;
+}
+div.flex-caption p {
+  margin-top: .25em;
+  margin-bottom: 0;
+}
+#carousel {
+  padding-top:1em;
+	max-width:1100px;
+}
+@media screen and (min-width: 750px) {
+/*  .flex-caption {
+	* position: absolute;
+  *  left: 0;
+  *  bottom: 0;
+  *  text-align: right;
+	*/
+  }
+/*  .caption_title {
+  *  display: inline-block;
+  *  position: absolute;
+  *  padding-left: 3em;
+  *  padding-right: 1em;
+  *  bottom: 30%;
+  * }
+	*/
+}
+
+.flex-direction-nav {
+  line-height: 2em;
+}
+@media screen and (min-width: 700px) {
+  .slider-save-space {
+    width: 100%;
+    min-height: 350px;
+    /* this needs to be adjusted by page once we know the slide sizes */
+  }
+}

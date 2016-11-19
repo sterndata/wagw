@@ -26,13 +26,13 @@ var e = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,he
 <div id="masthead-container">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'wagw' ); ?></a>
 	<header id="masthead" class="site-header" role="banner">
-        <nav id="site-navigation" class="main-navigation" role="navigation">
-            <button class="menu-toggle"><?php _e( 'View Menu', 'wagw' ); ?></button>
-            <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-        </nav><!-- #site-navigation -->
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle"><?php _e( 'View Menu', 'wagw' ); ?></button>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+		</nav><!-- #site-navigation -->
 
 		<div id="hdr-logo"><a href="/"><img src="/wp-content/uploads/WAWG-Logo.png" alt="Wow! What A great Website!" title="Wow! What A Great Website!"></a></div>
-		<div class="site-branding">  
+		<div class="site-branding">
 <?php get_sidebar( 'header' ); ?>
 
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -42,11 +42,13 @@ var e = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,he
 </div><!-- masthead container -->
 
 
-        <?php
-        if ( ! is_home() && ! is_single() &&  has_post_thumbnail() ) { ?>
-             <div id="featured-image">
-            <?php the_post_thumbnail('full'); ?>
-            </div>
-        <?php   } ?>
+		<?php
+		if ( ! is_home() && ! is_single() && ! is_page_template( 'slider-page.php' ) && has_post_thumbnail() ) { ?>
+			 <div id="featured-image">
+			<?php the_post_thumbnail( 'full' ); ?>
+			</div>
+		<?php   } ?>
+
+			
 
 	<div id="content" class="site-content">

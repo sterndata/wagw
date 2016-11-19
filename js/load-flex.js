@@ -15,7 +15,7 @@
           controlNav: false,
           animationLoop: true,
           slideshow: false,
-          itemWidth: 300,
+          itemWidth: 175,
           itemMargin: 15,
           asNavFor: '#slider',
        });
