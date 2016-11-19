@@ -133,7 +133,6 @@ function wagw_scripts() {
 	wp_enqueue_script( 'wagw-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'wagw-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
-//		wp_enqueue_script( 'wagw-adjust-sidebar', get_template_directory_uri() . '/js/adjust-sidebar.js', array(), '20141019', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -142,8 +141,57 @@ function wagw_scripts() {
 	wp_enqueue_script( 'thickbox', true );
 	wp_enqueue_style( 'thickbox' );
 
+
+    if ( is_page_template( 'slider-page.php' ) ) {
+       wp_enqueue_style( 'flexslider-css', get_stylesheet_directory_uri() . '/flexslider/flexslider.css' );
+       }       
+
 }
 add_action( 'wp_enqueue_scripts', 'wagw_scripts' );
+
+
+if( function_exists('acf_add_options_page') ) {
+	acf_add_options_page( array (
+                     'page_title' => 'WAGW Theme Options',
+                     'page_slug'  => 'wagw_options',
+                     'autoload'   => true,
+                      )
+                     );
+}
+// if using the slider-page template, enqueue flexsider
+function wagw_flexslider_gallery_scripts() {
+   if ( is_page_template( 'slider-page.php' ) ) {
+      wp_enqueue_script( 'jquery' );
+      wp_register_script('flexslider', get_stylesheet_directory_uri() . '/flexslider/jquery.flexslider-min.js', array( 'jquery' ), false, false);
+      wp_register_script( 'load_flex', get_stylesheet_directory_uri() . '/js/load-flex.js', array ( 'jquery', 'flexslider' ), false, false);
+      
+      $speed = get_field( 'slideshow_speed' );
+      $animation = get_field( 'animation_speed' );
+      $animation_type = get_field( 'animation_type' );
+      $easing = get_field( 'easing_method' );
+      $controlNav = $directionNav = false;
+      if ( get_field( 'nextprev_arrows') ) $directionNav = true;
+      if ( get_field( 'navigation_dots') ) $controlNav = true;
+      if ( get_field( 'slider_carousel') ) $controlNav = "thumbnails";
+     
+      // get the settings for this post 
+      
+      $args = array (
+        'animation'       => $animation_type,
+        'animationSpeed'  => $animation,
+        'slideshowSpeed'  => $speed,
+        'controlNav'      => $controlNav,
+        'directionNav'    => $directionNav,
+        'easing'          => $easing,
+        
+         
+         );
+      wp_enqueue_script( 'flexslider' );
+      wp_localize_script( 'load_flex', 'wagw', $args );
+      wp_enqueue_script( 'load_flex' );
+      }
+}
+add_action( 'wp_enqueue_scripts', 'wagw_flexslider_gallery_scripts');
 
 /**
  * Implement the Custom Header feature.
