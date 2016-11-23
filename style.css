@@ -663,6 +663,9 @@ a:active {
 .entry-summary {
 	margin: 1.5em 0 0;
 }
+.page-id-15 .entry-content {
+   margin-top:0;
+}
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
@@ -1008,8 +1011,9 @@ ul.slides {
 box-shadow: 0px 2px 10px 5px rgba(232,232,232,.7);
 }
 .flex-caption {
-  font-size: 18px;
+  font-size: 15px;
   font-style: italic;
+  font-weight:bold;
   color: #7f3e98;
   display: block;
   background: #fff;
