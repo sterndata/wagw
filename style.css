@@ -1070,3 +1070,7 @@ div.flex-caption p {
     /* this needs to be adjusted by page once we know the slide sizes */
   }
 }
+
+.entry-content img {
+    box-shadow: 1px 1px 5px #eee;
+}
