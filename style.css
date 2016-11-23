@@ -4,7 +4,7 @@ Theme URI: http://underscores.me/
 Author: Stern Data Solutions
 Author URI: http://www.sterndata.com
 Description: A theme for WAGW
-Version: 2016.11.12
+Version: 2016.11.23
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: wagw
@@ -879,13 +879,6 @@ h1.page-title {
   background: rgba(152, 202, 73,.1) !important;
 }
 
-/* color the CF7 inputs */
-
-.wpcf7 input,
-.wpcf7 textarea {
-   background: rgba(152, 202, 73,.1);
-   font-family:Courier,mono;
-}
 .frm_style_formidable-style.with_frm_style input[type=text], .frm_style_formidable-style.with_frm_style input[type=password], .frm_style_formidable-style.with_frm_style input[type=email], .frm_style_formidable-style.with_frm_style input[type=number], .frm_style_formidable-style.with_frm_style input[type=url], .frm_style_formidable-style.with_frm_style input[type=tel], .frm_style_formidable-style.with_frm_style input[type=file], .frm_style_formidable-style.with_frm_style input[type=search] {
       background: rgba(152, 202, 73,.1) !important;
 }
@@ -1042,23 +1035,6 @@ div.flex-caption p {
     width: 47px !important;
     height: 47px !important;
 }
-@media screen and (min-width: 750px) {
-/*  .flex-caption {
-	* position: absolute;
-  *  left: 0;
-  *  bottom: 0;
-  *  text-align: right;
-	*/
-  }
-/*  .caption_title {
-  *  display: inline-block;
-  *  position: absolute;
-  *  padding-left: 3em;
-  *  padding-right: 1em;
-  *  bottom: 30%;
-  * }
-	*/
-}
 
 .flex-direction-nav {
   line-height: 2em;
@@ -1066,8 +1042,6 @@ div.flex-caption p {
 @media screen and (min-width: 700px) {
   .slider-save-space {
     width: 100%;
-/*    min-height: 350px; */
-    /* this needs to be adjusted by page once we know the slide sizes */
   }
 }
 
