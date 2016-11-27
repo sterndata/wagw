@@ -1010,6 +1010,10 @@ ul.slides {
  /*  border: 2px solid #000 !important; */
 box-shadow: 0px 2px 10px 5px rgba(232,232,232,.7);
 }
+
+.page-template-slider-page-php  header.entry-header {
+   margin-bottom: 30px;
+}
 .flex-caption {
   font-size: 15px;
   font-style: italic;
