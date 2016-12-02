@@ -840,6 +840,10 @@ h1.page-title {
   line-height:1.25em;
   clear:none;
 }
+.entry-content h3 {
+  font-weight:bold;
+  color: #75439A;
+}
 .entry-content a {
   font-weight: bold;
 }
