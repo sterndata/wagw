@@ -7,17 +7,17 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-<?php if (!is_front_page()) { ?>
+<?php if ( ! is_front_page() ) { ?>
 
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 	<?php
 
-		if ( have_rows( 'slides' ) ) {
-			$use_srcset = false;
-			if ( function_exists( 'wp_get_attachment_image_srcset' ) ) { $use_srcset = true; }
-			/// ?>
+	if ( have_rows( 'slides' ) ) {
+		$use_srcset = false;
+		if ( function_exists( 'wp_get_attachment_image_srcset' ) ) { $use_srcset = true; }
+		/// ?>
 
 <div id="slider" class="flexslider slider-save-space">
 <ul class="slides">
@@ -29,7 +29,11 @@ while ( have_rows( 'slides' ) ) { the_row();
 	$slide_caption = get_sub_field( 'slide_caption' );
 	$slide_target = get_sub_field( 'slide_target' );
 	if ( $slide_target ) {
-		$href = '<a href="' . $slide_target . '">';
+		$href = '<a href="' . $slide_target . '"';
+		if ( get_sub_field( 'new_window' ) ) {
+			$href .= ' target=_blank';
+		}
+		$href .= '>';
 	}
 	if ( $use_srcset ) {
 		$src_set = ' srcset ="' . wp_get_attachment_image_srcset( $image['id'] ) . '" ';
@@ -61,7 +65,7 @@ while ( have_rows( 'slides' ) ) { the_row();
 </div>
 
 <?php	} // carousel
-		} // images
+	} // images
 
 		?>
 <?php } ?>
