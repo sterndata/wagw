@@ -469,7 +469,7 @@ h2.site-description {
  }
 } /* 650px */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 690px) {
 	.menu-toggle,
 	.main-navigation.toggled .nav-menu {
 		display: block;
@@ -477,6 +477,10 @@ h2.site-description {
 	}
     .menu-toggle {
         font-weight:bold;
+        color:#fff;
+        background:#444;
+        line-height:2;
+        border:none;
     }
 	.main-navigation ul {
 		display: none;
