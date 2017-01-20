@@ -452,6 +452,8 @@ a:active {
 h2.site-description {
   font-size: 32px;
 }
+
+
 @media screen and (max-width: 600px) {
 
  h2.site-description {
@@ -520,6 +522,7 @@ h2.site-description {
      z-index:0;
    }
 }
+
 .site-main .comment-navigation,
 .site-main .paging-navigation,
 .site-main .post-navigation {
@@ -794,9 +797,26 @@ object {
 #content {
   position:relative;
 }
-#masthead-container {
+#masthead-container { 
  background-color: #F37321;
+ height: 141px;
+ position:fixed;
+ width: 100%;
+ z-index: 10;
 }
+#main-container {
+  padding-top: 141px;
+}
+@media screen and (max-width: 900px) {
+   #masthead-container {
+    height:auto;
+    position:inherit;
+   }
+   #main-container {
+    padding-top: 0;
+   }
+}
+
 #colophon-container {
   background-color: #98CA49;
   color: #fff;
@@ -816,6 +836,7 @@ h1.entry-title, .entry-content h1 {
 }
 .entry-content h1 {
   margin-bottom: 1em;
+  clear:none;
 }
 h1.widget-title {
   font-weight: bold;

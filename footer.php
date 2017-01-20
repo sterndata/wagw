@@ -19,5 +19,6 @@
 
 <?php wp_footer(); ?>
 </div><!-- colophon-container -->
+</div><!-- main-container -->
 </body>
 </html>

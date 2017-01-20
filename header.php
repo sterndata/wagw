@@ -40,7 +40,7 @@ var e = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,he
 		</div>
 	</header><!-- #masthead -->
 </div><!-- masthead container -->
-
+<div id="main-container">
 
 		<?php
 		if ( ! is_home() && ! is_single() && ! is_page_template( 'slider-page.php' ) && has_post_thumbnail() ) { ?>
