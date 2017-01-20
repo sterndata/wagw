@@ -806,13 +806,16 @@ object {
   color:#fff;
   text-decoration:none;
 }
-h1.entry-title {
+h1.entry-title, .entry-content h1 {
   font-weight:bold;
   font-size:200%;
   margin-left:20%;
   margin-top:.5em;
   color: #75439A;
   text-transform: lowercase;
+}
+.entry-content h1 {
+  margin-bottom: 1em;
 }
 h1.widget-title {
   font-weight: bold;
