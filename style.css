@@ -1018,7 +1018,7 @@ h1.page-title {
     margin-top: 1em;
 }
 
-@media screen and (min-width:500px) {
+@media screen and (min-width:650px) {
   .hdr-social-icons {
     float:right;
     margin-top: -1em;
