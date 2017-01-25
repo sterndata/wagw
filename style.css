@@ -802,7 +802,12 @@ object {
   position:relative;
 }
 #masthead-container { 
- background-color: #F37321;
+ background: #F37321;
+ background: -webkit-linear-gradient(180deg, rgba(243, 115, 33,1),rgba(243, 115, 33,.9));
+ background: -moz-linear-gradient(180deg, rgba(243, 115, 33,1),rgba(243, 115, 33,.9));
+ background: -o-linear-gradient(180deg, rgba(243, 115, 33,1),rgba(243, 115, 33,.9));
+ background: linear-gradient(180deg, rgba(243, 115, 33,1),rgba(243, 115, 33,.9));
+
  height: 141px;
  position:fixed;
  width: 100%;
