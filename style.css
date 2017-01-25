@@ -808,6 +808,13 @@ object {
  width: 100%;
  z-index: 10;
 }
+/* offset anchor links */
+.sds-anchor {
+   display:block;
+   height: 146px;
+   margin-top: -146px;
+   visibility: hidden;
+}
 #main-container {
   padding-top: 141px;
 }
@@ -815,6 +822,10 @@ object {
    #masthead-container {
     height:auto;
     position:inherit;
+   }
+  .sds-anchor {
+     height: auto;
+     margin-top: 0;
    }
    #main-container {
     padding-top: 0;
@@ -1012,6 +1023,9 @@ h1.page-title {
 }
 
 /* footer stuff */
+.hdr-social-icons img {
+    margin-left: 1em;
+}
 .hdr-social-icons {
     float:none;
     display: inline-block;
