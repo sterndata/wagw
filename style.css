@@ -108,6 +108,9 @@ section {
 ol, ul {
 	list-style: none;
 }
+li {
+  margin-bottom: .5em;
+}
 table { /* tables still need 'cellspacing="0"' in the markup */
 	border-collapse: separate;
 	border-spacing: 0;
