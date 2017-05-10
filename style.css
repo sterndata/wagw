@@ -1129,6 +1129,7 @@ span#newsletter-toggle-5 {
     color: #fff;
     text-decoration:none!important;
     outline:none;
+    display:flex;
 }
 .sh-link newsletter-link a:active, .sh-hide a:active, span#newsletter-toggle-5:active {
     box-shadow: initial;
