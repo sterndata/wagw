@@ -1118,4 +1118,23 @@ div.flex-caption p {
     width: 100%;
   }
 }
+span#newsletter-toggle-5 {
+    background: #98ca49;
+    padding: 1em;
+    border-radius: 8px;
+    color: #fff;
+    box-shadow: 0 0 7px 1px #ccc;
+}
+#newsletter-link-5.sh-link.newsletter-link.sh-hide a, #newsletter-link-5.sh-link.newsletter-link.sh-show a {
+    color: #fff;
+    text-decoration:none!important;
+    outline:none;
+}
+.sh-link newsletter-link a:active, .sh-hide a:active, span#newsletter-toggle-5:active {
+    box-shadow: initial;
+}
 
+#newsletter-link-5 {
+    margin-top: 3em;
+}
+  
