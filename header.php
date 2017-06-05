@@ -43,11 +43,20 @@ var e = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,he
 <div id="main-container">
 
 		<?php
-		if ( ! is_home() && ! is_single() && ! is_page_template( 'slider-page.php' ) && has_post_thumbnail() ) { ?>
+		if ( ! is_single() && ! is_page_template( 'slider-page.php' ) && has_post_thumbnail() ) { ?>
 			 <div id="featured-image">
-			<?php the_post_thumbnail( 'full' ); ?>
-			</div>
-		<?php   } ?>
+
+<?php if ( is_front_page() ) {
+
+						$thumb = get_the_post_thumbnail_url( get_the_ID(), 'full' );
+						$short = '[video_lightbox_youtube video_id="Td47p5PiveY&rel=0" width="1280" height="720" anchor="' . $thumb . '"]';
+						echo do_shortcode( $short );
+} else {
+	the_post_thumbnail( 'full' );
+}
+						?>
+						</div>
+				<?php   } ?>
 
 			
 
