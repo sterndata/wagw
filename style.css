@@ -955,7 +955,8 @@ h1.page-title {
 .page-template-page-sidebar .content-area,
 .archive .content-area,
 .single .content-area,
-.blog .content-area {
+.blog .content-area,
+.search-results .content-area {
         float: left;
         margin: 0 -25% 0 0;
         width: 100%;
@@ -964,13 +965,15 @@ h1.page-title {
 .page-template-page-sidebar .site-main,
 .archive .site-main,
 .single .site-main,
-.blog .site-main {
+.blog .site-main,
+.search-results .site-main {
        margin: 0 25% 0 0;
 }
 .page-template-page-sidebar .site-content .widget-area,
 .archive .site-content .widget-area,
 .single .site-content .widget-area,
-.blog .site-content .widget-area {
+.blog .site-content .widget-area,
+.search-results .site-content .widget-area  {
         padding-top: 3em;
         padding-left: 1em;
         padding-right: 1em;
@@ -1006,7 +1009,8 @@ h1.page-title {
    .page-template-page-sidebar .content-area,
    .archive .content-area,
    .single .content-area,
-   .blog .content-area {
+   .blog .content-area,
+   .search-results .content-area {
         float: none;
         margin: 0;
         width: 100%;
@@ -1014,13 +1018,15 @@ h1.page-title {
    .page-template-page-sidebar .site-main,
    .archive .site-main,
    .single .site-main,
-   .blog .site-main {
+   .blog .site-main,
+   .search-results .site-main {
        margin: 0;
    }
    .page-template-page-sidebar .site-content .widget-area,
    .archive .site-content .widget-area,
    .single .site-content .widget-area,
-   .blog .site-content .widget-area {
+   .blog .site-content .widget-area,
+   .search-results .widget-area {
         padding-top: 2em;
         float: none;
         overflow: hidden;
