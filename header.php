@@ -43,7 +43,7 @@ var e = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,he
 <div id="main-container">
 
 		<?php
-		if ( ! is_single() && ! is_page_template( 'slider-page.php' ) && has_post_thumbnail() ) { ?>
+		if ( ! is_single() && ! is_page_template( 'slider-page.php' ) && ! is_search() && has_post_thumbnail() ) { ?>
 			 <div id="featured-image">
 
 <?php if ( is_front_page() ) {
