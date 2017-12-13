@@ -857,6 +857,9 @@ h1.entry-title, .entry-content h1 {
   color: #75439A;
   text-transform: lowercase;
 }
+.home .entry-content h1 {
+   margin-left:0;
+}
 .entry-content h1 {
   margin-bottom: 1em;
   clear:none;
