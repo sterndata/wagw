@@ -859,6 +859,8 @@ h1.entry-title, .entry-content h1 {
 }
 .home .entry-content h1 {
    margin-left:0;
+   color: #444;
+   font-size: 150%;
 }
 .entry-content h1 {
   margin-bottom: 1em;
