@@ -1128,6 +1128,9 @@ div.flex-caption p {
 .flex-direction-nav {
   line-height: 2em;
 }
+.flex-direction-nav a:before {
+  color: rgba(0,0,0,.2) !important;
+}
 @media screen and (min-width: 700px) {
   .slider-save-space {
     width: 100%;
