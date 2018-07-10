@@ -441,6 +441,15 @@ a:active {
 .main-navigation .current-menu-parent a {
    background-color:#98CA49;
 }
+.main-navigation ul ul .current_page_item a,
+.main-navigation ul ul .current-menu-item a {
+	background: #F37321;
+}
+.main-navigation ul ul .current_page_item a:hover,
+.main-navigation ul ul .current-menu-item a:hover {
+        background: #75439A;
+}
+
 /* Small menu */
 .menu-toggle {
 	display: none;
