@@ -820,8 +820,8 @@ object {
 /* offset anchor links */
 .sds-anchor {
    display:block;
-   height: 146px;
-   margin-top: -146px;
+   height: 150px;
+   margin-top: -150px;
    visibility: hidden;
 }
 #main-container {
