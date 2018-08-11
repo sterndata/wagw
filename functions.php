@@ -238,7 +238,3 @@ function yoasttobottom() {
 }
 add_filter( 'wpseo_metabox_prio', 'yoasttobottom' );
 
-function wagw_clear () {
-  return '<div style="clear: both;"></div>';
-}
-add_shortcode( 'clear', 'wagw_clear');

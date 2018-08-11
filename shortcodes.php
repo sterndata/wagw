@@ -15,3 +15,9 @@ function shortcode_wagw_cols( $atts, $content ) {
 	return '<div class="wagw_col wagw_col_'.sanitize_text_field( $a['type'] ).'">'.$content.'</div>';
 }
 add_shortcode( 'wagw_col','shortcode_wagw_cols' );
+
+function wagw_clear () {
+  return '<div style="clear: both;"></div>';
+}
+add_shortcode( 'clear', 'wagw_clear');
+
