@@ -4,7 +4,7 @@ Theme URI: https://github.com/sterndata/wagw
 Author: Stern Data Solutions
 Author URI: http://www.sterndata.com
 Description: A theme for WAGW
-Version: 2017.10.31
+Version: 2018.08.29 
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: wagw
@@ -1175,4 +1175,8 @@ span#newsletter-toggle-5 {
 }
 img.wagw-border {
     border: solid 1px #888;
+}
+
+.page-id-13 h2 {  /* services page */
+   clear: both;
 }  
